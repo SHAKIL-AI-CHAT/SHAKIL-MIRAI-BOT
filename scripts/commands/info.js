@@ -1,8 +1,8 @@
 module.exports.config = {
-  name: "admin",
+  name: "info",
   version: "1.0.0",
   permission: 0,
-  credits: "farhan",
+  credits: "shakil",
   prefix: true,
   description: "search results on google",
   category: "without prefix",
@@ -20,12 +20,21 @@ const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
 const time = process.uptime(),
-  hours = Math.floor(time / (60 * 60)),
-  minutes = Math.floor((time % (60 * 60)) / 60),
-  seconds = Math.floor(time % 60);
+		hours = Math.floor(time / (60 * 60)),
+		minutes = Math.floor((time % (60 * 60)) / 60),
+		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
+var link = ["https://i.postimg.cc/XYVDwghc/IMG-20251225-060146-164.jpg", 
+            
+            "https://i.postimg.cc/XYVDwghc/IMG-20251225-060146-164.jpg", 
+            
+            "https://i.postimg.cc/XYVDwghc/IMG-20251225-060146-164.jpg",
 
+"https://i.postimg.cc/XYVDwghc/IMG-20251225-060146-164.jpg",
+            
+            "https://i.postimg.cc/XYVDwghc/IMG-20251225-060146-164.jpg"];
+  
 var callback = () => api.sendMessage({body:`🌺🍒🐰❀𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍💝🐰🍒 
 
 ╔════•|      ✿      |•════╗
@@ -36,7 +45,7 @@ ________________________________________
 
 💠𝐁𝐎𝐓 𝐍𝐀𝐌𝐄💠 : ${global.config.BOTNAME}
 
-🌼𝐁𝐎𝐓 𝐀𝐃𝐌𝐈𝐍🌼 : 『😽👉  𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍 👈😽』
+🌼𝐁𝐎𝐓 𝐀𝐃𝐌𝐈𝐍🌼 : 『😽👉‌—͞𝐒𝐇𝐀𝐊𝐈𝐋‌𝆺𝅥𝄟⃝🌹👈😽』
 
 🔥𝐁𝐈𝐎 𝐀𝐃𝐌𝐈𝐍🔥 : [ ⊱༅༎😽💚༅༎⊱
 
@@ -48,17 +57,21 @@ ________________________________________
 
 ⊱༅༎😽💚༅༎⊱ ]
 
-🏠𝐀𝐃𝐃𝐑𝐄𝐒𝐒🏠 : চুয়াডাঙ্গা, বাংলাদেশ
-
+🏠𝐀𝐃𝐃𝐑𝐄𝐒𝐒🏠 :[𝐉𝐡𝐞𝐧𝐚𝐢𝐝𝐡]:[𝐁𝐀𝐍𝐆𝐋𝐀𝐃𝐄𝐒𝐇] 
+🌺𝐑𝐄𝐋𝐈𝐆𝐈𝐎𝐍🌺 :[𝐈𝐒𝐋𝐀𝐌]
+💮𝐆𝐄𝐍𝐃𝐄𝐑💮  :[𝐌𝐀𝐋𝐄]
+🌸𝐑𝐄𝐋𝐀𝐓𝐈𝐎𝐍𝐒𝐇𝐈𝐏🌸 :[𝐒𝐈𝐍𝐆𝐋𝐄]
+🌼𝐖𝐎𝐑𝐊🌼 :[😅⚡𝐍𝐎 𝐉𝐎𝐁]
+🌷𝐖𝐇𝐀𝐓'𝐒 𝐀𝐏𝐏🌷:[𝟎𝟏𝟔𝟎𝟐𝟖𝟗𝟐𝟓𝟕𝟗]
 _____________🅲🅾🅽🆃🅰🅲🆃_____________
 
-💥𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈𝐃 (❶)💥 : https://www.facebook.com/share/1C1d3Aez9o/
+💥𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈𝐃 (❶)💥 : https://www.facebook.com/61588178231072
 
-💥𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈𝐃 (❷)💥 : https://www.facebook.com/DEVIL.FARHAN.420
+💥𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈𝐃 (❷)💥 : https://www.facebook.com/61588886578862
 
 ✴️𝐁𝐎𝐓 𝐏𝐑𝐄𝐅𝐈𝐗✴️ : ${global.config.PREFIX}
 
-❇️𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑✳️ : {🌻𝐌𝐑.𝐁𝐎𝐒𝐒 𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍 
+❇️𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑✳️ : {🌻𝐌𝐑.𝐁𝐎𝐒𝐒 𝐒𝐇𝐀𝐊𝐈𝐋 
 𝐕𝐈𝐑𝐓𝐔𝐀𝐋 𝐓𝐎𝐏 𝐅𝐌𝐙 𝐊𝐈𝐍𝐆
 𝐘𝐎𝐔'𝐑 𝐍𝐄𝐗𝐓 𝐕𝐀𝐓𝐀𝐑 𝐗𝐀𝐍'𝐒
 𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐌𝐀𝐒𝐓𝐄𝐑
@@ -76,8 +89,6 @@ _____________🅲🅾🅽🆃🅰🅲🆃_____________
 
 🐰🍒𝐁𝐎𝐓 𝐈𝐒 𝐑𝐔𝐍𝐍𝐈𝐍𝐆🍒🐰 ${hours}:${minutes}:${seconds}.
 
-💚🌺𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆🌺💚 ${global.config.BOTNAME} 『😽🖤🌺』`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
-  fs.unlinkSync(__dirname + "/cache/1.png"));  
-    return request(encodeURI(`https://graph.facebook.com/61583610247347/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
-fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
- };
+💚🌺𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆🌺💚 ${global.config.BOTNAME} 『😽🖤🌺』`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
+   };
