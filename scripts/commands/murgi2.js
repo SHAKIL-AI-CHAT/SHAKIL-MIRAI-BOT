@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "murgi",
 	version: "1.0.2",
 	permission: 2,
-	credits: "nayan",
+	credits: "shakil",
 	prefix: false,
 	description: "",
 	category: "without prefix",
@@ -17,7 +17,7 @@ module.exports.run = async function({ api, args, Users, event}) {
 		var arraytag = [];
 				arraytag.push({id: mention, tag: name});
 		var a = function (a) { api.sendMessage(a, event.threadID); }
-a("বস 𓆩𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍𓆪 এর চুদা লো-🖕🥵");
+a("বস 𓆩─꯭─⃝͎̽𝐒𝐇𝐀𝐊𝐈𝐋𓆪 এর চুদা লো-🖕🥵");
 setTimeout(() => {a({body: "খাংকির পোলা তর মারে চুদি 🥰।" + " " + name, mentions: arraytag})}, 3000);
 setTimeout(() => {a({body: "খাংকির পোলা তর কচি বোন রে চুদি 😍.." + " " + name, mentions: arraytag})}, 5000);
 setTimeout(() => {a({body: "মাদারচোদ তর আম্মু পম পম খাংকির পো 🐰" + " " + name, mentions: arraytag})}, 7000);
