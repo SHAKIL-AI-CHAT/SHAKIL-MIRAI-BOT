@@ -2,7 +2,7 @@ module.exports.config = {
   name: "fork",
   version: "1.0.0",
   permission: 2,
-  credits: "Farhan",
+  credits: "Shakil",
   description: "fork",
   prefix: true, 
   category: "user", 
@@ -21,6 +21,6 @@ const fs = global.nodemodule["fs-extra"];
             
             "https://i.postimg.cc/k5NPGMNC/Screenshot-2025-0713-035903.png", 
  ];
-   var callback = () => api.sendMessage({body:`👉-এই নাও বস ফারহান এর GITHUB -BOT- লিংক ফলো করে দিও-♻️💯                                            👇{https://github.com/DJ-FARHAN-BOT/MIM}+\nSố ảnh: ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
+   var callback = () => api.sendMessage({body:`👉-এই নাও বস 𓆩𝗦𝗵𝗮𝗸𝗶𝗹𓆪 এর GITHUB -BOT- লিংক ফলো করে দিও-♻️💯                                            👇{https://github.com/SHAKIL-AI-CHAT/SHAKIL-MIRAI-BOT.git}+\nSố ảnh: ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
    };
